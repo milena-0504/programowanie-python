@@ -1,0 +1,36 @@
+import turtle
+import math
+turtle.setworldcoordinates(-400,0,400,800)
+zolw = turtle.Pen()
+predkosc = 1
+
+szer = 600
+parter = 200
+szer_drzwi = 50
+wys_drzwi = 90
+
+zolw.forward(szer/2)
+zolw.left(90)
+zolw.forward(parter)
+zolw.left(90)
+zolw.forward(szer)
+zolw.right(135)
+zolw.forward(szer/math.sqrt(2))
+zolw.right(90)
+zolw.forward(szer/math.sqrt(2))
+zolw.up()
+zolw.right(135)
+zolw.forward(szer)
+zolw.left(90)
+zolw.down()                    # Opuść pióro
+zolw.forward(parter)
+zolw.left(90)
+zolw.forward(szer/2)
+zolw.left(90)
+zolw.forward(wys_drzwi)
+zolw.right(90)
+zolw.forward(szer_drzwi)
+zolw.right(90)
+zolw.forward(wys_drzwi)
+
+turtle.done()
