@@ -55,41 +55,26 @@ print(tablica)
 print(tablica[0][4])
 
 suma_temp = 0
-
-for i in range(0,5):
-       temperatura = float(tablica[i][4])
-       print(temperatura)
-       suma_temp = suma_temp + temperatura
-       print(suma_temp)
-
-srednia = suma_temp / len(tablica)
-print(srednia)
-
-
-print(tablica[0][-3])
-
 suma_wilg = 0
-
-for i in range(0,5):
-       wilg = float(tablica[i][-3])
-       print(wilg)
-       suma_wilg = suma_wilg + wilg
-       print(suma_wilg)
-
-srednia_wilg = suma_wilg / len(tablica)
-print(srednia_wilg)
-
-
-
-print(tablica[0][-1])
-
 suma_cisn = 0
 
 for i in range(0,5):
-       cisn = float(tablica[i][-1])
-       print(cisn)
-       suma_cisn = suma_cisn + cisn
-       print(suma_cisn)
+       temperatura = float(tablica[i][4])
+       wilgotnosc = float(tablica[i][-3])
+       cisnienie = float(tablica[i][-1])
+       #print(temperatura)
+       suma_temp = suma_temp + temperatura
+       suma_wilg = suma_wilg + wilgotnosc
+       suma_cisn = suma_cisn + cisnienie
+       #print(suma_temp)
+       
+srednia_1 = suma_temp / len(tablica)
+print(srednia_1)
+srednia_2 = suma_wilg / len(tablica)
+print(srednia_2)
+srednia_3 = suma_cisn / len(tablica)
+print(srednia_3)
 
-srednia_cisn = suma_cisn / len(tablica)
-print(srednia_cisn)
+
+
+
